@@ -10,10 +10,10 @@ function calculate(){
    for (var i=0, len = exp; i<len; i++){
        calculationText = calculationText+base;
        if(i < len-1){
-           calculationText =calculationText+"X";
+           calculationText =calculationText+"*";
        }
    }
-   calculation.innerHTML = calculationText+"="+resultValue;
+   calculation.innerHTML = base+exp.sup()+"="+calculationText+"="+resultValue;
     
 }
 
